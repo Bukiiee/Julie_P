@@ -7,7 +7,6 @@ cp=["caillou", "rock", "pierre"]
 cf=["feuille", "papier", "paper"]
 cc=["ciseaux","cissors", "cisors"]
     
-
 while score_j != 3 and score_o != 3 :
     p1 = (input("Papier, caillou, ciseaux ? \n")).lower()
     p2 = randint(0,2)
