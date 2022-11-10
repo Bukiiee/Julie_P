@@ -8,7 +8,7 @@ cf=["feuille", "papier", "paper"]
 cc=["ciseaux","cissors", "cisors"]
     
 
-while score_j != 5 and score_o != 5 :
+while score_j != 3 and score_o != 3 :
     p1 = (input("Papier, caillou, ciseaux ? \n")).lower()
     p2 = randint(0,2)
     if p1 in cf :
@@ -41,11 +41,15 @@ while score_j != 5 and score_o != 5 :
     elif p1 == 'ciseau' :
         print("On dit une paire de ciseauX")
     elif p1 == 'puits' :
-        print("haha t'es un petit malin toi !")
+        print("Juste pour ça tu devrais perdre un point petit malin")
     else :
         print("saisie invalide, fais un effort")
 
-if score_j == 5 :        
-    print("Victoire de ",joueur1 ,"!!")
+if score_j == 3 :        
+    if joueur1 == "Sylvain" :
+        print("Bravo Sylvain, vous avez remporté la partie !!")
+#quelques points en plus pour ce message personnalisé ??
+    else :
+        print("Victoire de ",joueur1 ,"!!")
 else :
     print("Victoire de l'ordinateur, muahahaha")
